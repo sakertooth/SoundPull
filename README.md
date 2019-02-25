@@ -1,4 +1,4 @@
-# SoundPull
+# SoundPull C#
 With SoundPull, you are able to pull user information, track information, and playlist information, along with others from SoundCloud.
 
 # To Begin
