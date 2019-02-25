@@ -1,15 +1,24 @@
 # SoundPull C#
 With SoundPull, you are able to pull user information, track information, and playlist information, along with others from SoundCloud.
 
-# To Begin
-To bein using SoundPull, you would want to have a client id from the SoundCloud API, in other words, make an app on SoundCloud and get its client id.
+# Requirements
+Json.NET
 
-From there, you want to start a new session with a new seed and your client id.
+# Background Info
+In SoundCloud, most information that can be pulled from its API resolve endpoint is in json format, meaning that Json.NET is required in order to deserialize the information pulled from the API resolve endpoint.
+
+# Installion
+
+Installing SoundPull and Json.NET very simple.
+
+```
+Install-Package Newtonsoft.Json
+Install-Package Saker.SoundPull
+```
+
+# To Begin
 
 ```c#
-
-int seed = 0;
-SoundPull soundPull = new SoundPull(seed, [client_id]);
 
 ```
 
