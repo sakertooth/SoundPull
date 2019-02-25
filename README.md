@@ -6,14 +6,13 @@ With SoundPull, you are able to pull user information, track information, and pl
 Json.NET
 
 # Background Info
-In SoundCloud, most information that can be pulled from its API resolve endpoint is in Json format, meaning that Json.NET is required in order to deserialize the information pulled from the API resolve endpoint into readable objects.
+In SoundCloud, most information that can be pulled from its API resolve endpoint is in Json format, meaning that Json.NET is required in order to deserialize the information pulled from the API resolve endpoint into objects that SoundPull can read.
 
 # Installation
 
-Installing SoundPull and Json.NET very simple.
+Installing SoundPull is very simple (SoundPull comes with Json.Net).
 
 ```
-Install-Package Newtonsoft.Json
 Install-Package Saker.SoundPull
 ```
 
