@@ -1,2 +1,4 @@
 # SoundPull
-Used to pull users, tracks, comments, and more from SoundCloud
+With SoundPull, you are able to pull user information, track information, and playlist information, along with others.
+
+
