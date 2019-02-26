@@ -14,11 +14,8 @@ Install-Package Saker.SoundPull
 Install-Package Newtonsoft.Json
 ```
 
-# To Begin
-
-```c#
-
-```
+# What now?
+• [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki)
 
 # Help
 Tweet me any problems @SakerTooth on Twitter! :D
