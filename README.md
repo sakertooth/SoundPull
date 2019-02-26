@@ -7,10 +7,11 @@ In SoundCloud, most information that can be pulled is in Json format, meaning th
 
 # Installation
 
-Installing SoundPull is very simple (SoundPull comes with Json.Net).
+Installing SoundPull and Json.Net is very simple.
 
 ```
 Install-Package Saker.SoundPull
+Install-Package Newtonsoft.Json
 ```
 
 # To Begin
