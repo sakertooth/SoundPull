@@ -15,7 +15,7 @@ Install-Package Newtonsoft.Json
 ```
 
 # What now?
-• [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki)
+• [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki/Getting-Started)
 
 # Help
 Tweet me any problems @SakerTooth on Twitter! :D
