@@ -23,7 +23,7 @@ Install-Package Newtonsoft.Json
 
 ## Basic Usage
 
-* Make a new instance of SoundPullSession like so:
+* Make a new instance of a SoundPullSession like so:
 ```c#
 SoundPullSession session = new SoundPullSession("[your_client_id]");
 ```
@@ -50,7 +50,7 @@ string userDisplayName = user.username; //gets the users display name
 * [Json.NET](https://github.com/JamesNK/Newtonsoft.Json)
 * [NAudio](https://github.com/naudio/NAudio)
 
-### License
+## License
 SoundPull is licensed under the MIT license.
 \
 [![mit2](https://img.shields.io/github/license/sakertooth/SoundPull.svg)](https://github.com/sakertooth/SoundPull/blob/master/LICENSE)
