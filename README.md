@@ -23,7 +23,7 @@ Install-Package Newtonsoft.Json
 ```
 
 # What now?
-• [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki/Getting-Started)
+• [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki/1.-Getting-Started)
 
 # Help
 [![tweet](https://img.shields.io/twitter/url/https/sakertooth.svg?style=social)](https://twitter.com/SakerTooth) - Tweet me any bugs! 
