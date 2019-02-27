@@ -37,7 +37,7 @@ string userDisplayName = user.username; //gets the users display name
 ## What now?
 * [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki/1.-Getting-Started)
 
-## Help
+## Socials
 [![tweet](https://img.shields.io/twitter/url/https/sakertooth.svg?style=social)](https://twitter.com/SakerTooth)
 \
 [![twitter_follow](https://img.shields.io/twitter/follow/sakertooth.svg?style=social)](https://twitter.com/SakerTooth)
