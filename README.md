@@ -7,10 +7,10 @@
 \
 [![Saker.SoundPull](https://img.shields.io/nuget/v/Saker.SoundPull.svg)](https://www.nuget.org/packages/Saker.SoundPull/)
 
-With SoundPull, you are able to pull user information, track information, and playlist information, along with others from SoundCloud with the help of Json.NET.
+* With SoundPull, you are able to pull user information, track information, and playlist information, along with others from SoundCloud with the help of Json.NET.
 
 ## Background Info
-In SoundCloud, most information that can be pulled is in Json format, meaning that SoundPull uses Json.Net in order to deserialize the information pulled from the API resolve endpoint into objects that SoundPull can read. 
+* In SoundCloud, most information that can be pulled is in Json format, meaning that SoundPull uses Json.Net in order to deserialize the information pulled from the API resolve endpoint into objects that SoundPull can read. 
 
 ## Installation
 
@@ -23,12 +23,12 @@ Install-Package Newtonsoft.Json
 
 ## Basic Usage
 
-Make a new instance of SoundPullSession like so:
+* Make a new instance of SoundPullSession like so:
 ```c#
 SoundPullSession session = new SoundPullSession("[your_client_id]");
 ```
 
-From there, you can pull almost anything from SoundCloud (more coming soon):
+* From there, you can pull almost anything from SoundCloud (more coming soon):
 ```c#
 SoundCloudUser user = session.GetUser("user");
 string userDisplayName = user.username; //gets the users display name
