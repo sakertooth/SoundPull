@@ -24,8 +24,7 @@ Install-Package Newtonsoft.Json
 • [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki/Getting-Started)
 
 # Help
-Tweet me any problems @SakerTooth on Twitter! :D
-Finding issues is also greatly appreciated!
+![tweet](https://img.shields.io/twitter/url/https/sakertooth.svg?style=social) -Tweet me any bugs
 
 # License
 SoundPull is licensed under the MIT license.
