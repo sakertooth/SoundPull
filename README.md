@@ -5,7 +5,7 @@ With SoundPull, you are able to pull user information, track information, and pl
 ![build](https://img.shields.io/appveyor/ci/sakertooth/soundpull.svg)
 ![issues](https://img.shields.io/github/issues/sakertooth/soundpull.svg)
 ![nuget downloads](https://img.shields.io/nuget/dt/Saker.SoundPull.svg)
-/
+\
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2116a4e0e7544663bb8c397fa2505d37)](https://www.codacy.com/app/sakertooth/SoundPull?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sakertooth/SoundPull&amp;utm_campaign=Badge_Grade)
 ![mit](https://img.shields.io/github/license/sakertooth/soundpull.svg)
 
