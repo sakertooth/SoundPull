@@ -1,11 +1,10 @@
 # SoundPull
 <img src="logo.png" width="128" height="128"/>
 
-![build](https://img.shields.io/appveyor/ci/sakertooth/soundpull.svg)
-![issues](https://img.shields.io/github/issues/sakertooth/soundpull.svg)
+[![build](https://img.shields.io/appveyor/ci/sakertooth/soundpull.svg)](https://ci.appveyor.com/project/sakertooth/soundpull)
+[![issues](https://img.shields.io/github/issues/sakertooth/soundpull.svg)](https://github.com/sakertooth/SoundPull/issues)
 [![nuget downloads](https://img.shields.io/nuget/dt/Saker.SoundPull.svg)](https://www.nuget.org/packages/Saker.SoundPull/)
 \
-![mit](https://img.shields.io/github/license/sakertooth/soundpull.svg)
 [![Saker.SoundPull](https://img.shields.io/nuget/v/Saker.SoundPull.svg)](https://www.nuget.org/packages/Saker.SoundPull/)
 
 With SoundPull, you are able to pull user information, track information, and playlist information, along with others from SoundCloud with the help of Json.NET.
