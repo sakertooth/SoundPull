@@ -2,7 +2,7 @@
 <img src="logo.png" width="128" height="128">
 With SoundPull, you are able to pull user information, track information, and playlist information, along with others from SoundCloud with the help of Json.NET.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/6ww2gibys7578xno?svg=true)](https://ci.appveyor.com/project/sakertooth/soundpull)
+![build](https://img.shields.io/appveyor/ci/sakertooth/soundpull.svg)
 ![issues](https://img.shields.io/github/issues/sakertooth/soundpull.svg)
 
 
