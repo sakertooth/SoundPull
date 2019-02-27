@@ -7,6 +7,7 @@
 \
 [![Saker.SoundPull](https://img.shields.io/nuget/v/Saker.SoundPull.svg)](https://www.nuget.org/packages/Saker.SoundPull/)
 
+## Getting Started
 * With SoundPull, you are able to pull user information, track information, and playlist information, along with others from SoundCloud with the help of Json.NET.
 
 * In addition, you can also play tracks and playlists from SoundPull using its player class.
