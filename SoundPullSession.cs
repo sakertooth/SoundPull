@@ -28,7 +28,7 @@ namespace SoundPull
         {
             this.clientID = clientID;
         }
-
+        
         /// <summary>
         /// Gets a SoundCloud track.
         /// </summary>
@@ -63,6 +63,26 @@ namespace SoundPull
             {
                 JsonSerializer serializer = new JsonSerializer();
                 return serializer.Deserialize<SoundCloudUser>(reader);
+            }
+        }
+
+        /// <summary>
+        /// Gets a SoundCloud playlist.
+        /// Please note that this may have problems with very large playlists (usually >100)
+        /// </summary>
+        /// <param name="userPermalink"></param>
+        /// <param name="playlistPermalink"></param>
+        /// <returns></returns>
+        public SoundCloudPlaylist GetPlaylist(string userPermalink, string playlistPermalink)
+        {
+            string resolveUrl = apiResolveURL + (soundCloudURL + userPermalink + "/sets/" + playlistPermalink).Replace(":", "%3A").Replace("/", "%2F") + "&client_id=" + clientID;
+
+            using (Stream s = jsonClient.GetStreamAsync(resolveUrl).Result)
+            using (StreamReader sr = new StreamReader(s))
+            using (JsonReader reader = new JsonTextReader(sr))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                return serializer.Deserialize<SoundCloudPlaylist>(reader);
             }
         }
     }
