@@ -47,4 +47,5 @@ string userDisplayName = user.username; //gets the users display name
 ![star](https://img.shields.io/github/stars/sakertooth/SoundPull.svg?style=social)
 ### License
 SoundPull is licensed under the MIT license.
+\
 [![mit2](https://img.shields.io/github/license/sakertooth/SoundPull.svg)](https://github.com/sakertooth/SoundPull/blob/master/LICENSE)
