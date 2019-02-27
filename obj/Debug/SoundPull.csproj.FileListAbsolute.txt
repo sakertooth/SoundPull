@@ -1,0 +1,12 @@
+C:\Users\Saker\source\repos\SoundPull\SoundPull\bin\Debug\SoundPull.pdb
+C:\Users\Saker\source\repos\SoundPull\SoundPull\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Saker\source\repos\SoundPull\SoundPull\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Saker\source\repos\SoundPull\SoundPull\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Saker\source\repos\SoundPull\SoundPull\obj\Debug\SoundPull.csprojAssemblyReference.cache
+C:\Users\Saker\source\repos\SoundPull\SoundPull\obj\Debug\SoundPull.csproj.CoreCompileInputs.cache
+C:\Users\Saker\source\repos\SoundPull\SoundPull\obj\Debug\SoundPull.csproj.CopyComplete
+C:\Users\Saker\source\repos\SoundPull\SoundPull\obj\Debug\SoundPull.pdb
+C:\Users\Saker\source\repos\SoundPull\SoundPull\bin\Debug\NAudio.dll
+C:\Users\Saker\source\repos\SoundPull\SoundPull\bin\Debug\NAudio.xml
+C:\Users\Saker\source\repos\SoundPull\SoundPull\bin\Debug\SoundPull.dll
+C:\Users\Saker\source\repos\SoundPull\SoundPull\obj\Debug\SoundPull.dll
