@@ -10,7 +10,7 @@
 ## Getting Started
 * With SoundPull, you are able to pull user information, track information, and playlist information, along with others from SoundCloud with the help of Json.NET.
 
-* In addition, you can also play tracks and playlists from SoundPull using its player class.
+* In addition, you can also play tracks and playlists from SoundPull using its player class. This is made possible by the use of NAudio.
 
 * In SoundCloud, most information that can be pulled is in JSON format, meaning that SoundPull uses Json.Net in order to deserialize the information pulled from the API resolve endpoint into objects that SoundPull can read. 
 
