@@ -1,5 +1,6 @@
 # SoundPull
-<img src="logo.png" width="128" height="128">
+<img src="logo.png" width="128" height="128"/>
+
 ![build](https://img.shields.io/appveyor/ci/sakertooth/soundpull.svg)
 ![issues](https://img.shields.io/github/issues/sakertooth/soundpull.svg)
 ![nuget downloads](https://img.shields.io/nuget/dt/Saker.SoundPull.svg)
