@@ -11,12 +11,11 @@ namespace SoundPull
     public class SoundPullSession
     {
         private readonly HttpClient jsonClient = new HttpClient();
-        private JsonSerializer serializer = new JsonSerializer();
+        private readonly JsonSerializer serializer = new JsonSerializer();
+        private readonly string clientID;
 
         private const string apiResolveURL = "https://api.soundcloud.com/resolve.json?url=";
         private const string soundCloudURL = "https://soundcloud.com/";
-
-        private string clientID;
 
         /// <summary>
         /// 
