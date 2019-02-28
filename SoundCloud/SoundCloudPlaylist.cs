@@ -11,7 +11,7 @@ namespace SoundPull.SoundCloud
     /// </summary>
     public class SoundCloudPlaylist
     {
-        public string kind = "playlist";
+        public readonly string kind = "playlist";
 
         public int id { get; set; }
         public int duration { get; set; }

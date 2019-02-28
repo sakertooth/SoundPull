@@ -11,7 +11,7 @@ namespace SoundPull.SoundCloud
     /// </summary>
     public class SoundCloudUser
     {
-        public string kind = "user";
+        public readonly string kind = "user";
         
         public int id { get; set; }
         public string permalink { get; set; }

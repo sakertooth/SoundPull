@@ -1,9 +1,4 @@
 ﻿using SoundPull.SoundCloud;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
 using System.Net.Http;
@@ -13,17 +8,20 @@ namespace SoundPull
     /// <summary>
     /// Used to pull tracks, playlists, comments, and more from SoundCloud.
     /// </summary>
-    /// <param name="clientID"></param>
     public class SoundPullSession
     {
+        private readonly HttpClient jsonClient = new HttpClient();
         private JsonSerializer serializer = new JsonSerializer();
-        private HttpClient jsonClient = new HttpClient();
 
         private const string apiResolveURL = "https://api.soundcloud.com/resolve.json?url=";
         private const string soundCloudURL = "https://soundcloud.com/";
 
-        public string clientID;
+        private string clientID;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientID"></param>
         public SoundPullSession(string clientID)
         {
             this.clientID = clientID;
@@ -43,7 +41,6 @@ namespace SoundPull
             using (StreamReader sr = new StreamReader(s))
             using (JsonReader reader = new JsonTextReader(sr))
             {
-                JsonSerializer serializer = new JsonSerializer();
                 return serializer.Deserialize<SoundCloudTrack>(reader);
             }
         }
@@ -51,7 +48,7 @@ namespace SoundPull
         /// <summary>
         /// Gets a SoundCloud user.
         /// </summary>
-        /// <param name="username"></param>
+        /// <param name="userPermalink"></param>
         /// <returns></returns>
         public SoundCloudUser GetUser(string userPermalink)
         {
@@ -61,7 +58,6 @@ namespace SoundPull
             using (StreamReader sr = new StreamReader(s))
             using (JsonReader reader = new JsonTextReader(sr))
             {
-                JsonSerializer serializer = new JsonSerializer();
                 return serializer.Deserialize<SoundCloudUser>(reader);
             }
         }
@@ -81,9 +77,17 @@ namespace SoundPull
             using (StreamReader sr = new StreamReader(s))
             using (JsonReader reader = new JsonTextReader(sr))
             {
-                JsonSerializer serializer = new JsonSerializer();
                 return serializer.Deserialize<SoundCloudPlaylist>(reader);
             }
+        }
+
+        /// <summary>
+        /// Get the client id.
+        /// </summary>
+        /// <returns></returns>
+        public string GetClientID()
+        {
+            return clientID;
         }
     }
 }

@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SoundPull</name>
+    </assembly>
+    <members>
+        <member name="T:SoundPull.Tools.SoundCloudPlayer">
+            <summary>
+            Used to play tracks and playlists pulled from SoundPull using NAudio.
+            It has play and pause functions, as well as a volume function.
+            It can also retrieve the current position of your song (minutes:seconds) and the duration of your song (minutes:seconds)
+            </summary>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.#ctor(SoundPull.SoundCloud.SoundCloudTrack,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="track"></param>
+            <param name="clientID"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.#ctor(SoundPull.SoundCloud.SoundCloudPlaylist,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="playlist"></param>
+            <param name="clientID"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.SetTrack(SoundPull.SoundCloud.SoundCloudTrack,System.Boolean)">
+            <summary>
+            Set a new track for the player.
+            </summary>
+            <param name="track"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.SetPlaylist(SoundPull.SoundCloud.SoundCloudPlaylist,System.Boolean)">
+            <summary>
+            Set a new playlist for the player.
+            </summary>
+            <param name="playlist"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.SetTrackInPlaylist(System.Int32)">
+            <summary>
+            Change the track in the playlist if specified.
+            </summary>
+            <param name="trackIndex"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.Play">
+            <summary>
+            Starts playing the track.
+            </summary>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.Stop">
+            <summary>
+            Stops the track.
+            </summary>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.Pause">
+            <summary>
+            Pauses the track.
+            </summary>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.Next(System.Boolean)">
+            <summary>
+            If a playlist is set, move to the next track.
+            <paramref name="play"/>
+            </summary>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.Previous(System.Boolean)">
+            <summary>
+            If a playlist is set, go back to the previous track.
+            <paramref name="play"/>
+            </summary>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.SetVolume(System.Single)">
+            <summary>
+            Set the volume.
+            </summary>
+            <param name="volume"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.GetVolume">
+            <summary>
+            Get the volume.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.GetPlayingTrack">
+            <summary>
+            Get the current playing track.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.GetState">
+            <summary>
+            Get the current state of the player.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.GetCurrentPosition">
+            <summary>
+            Gets the current position of the track and puts it in the format (m:ss)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.GetCurrentPosition(System.String)">
+            <summary>
+            Gets the current position of the track and puts it in the format specified.
+            </summary>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SoundPull.Tools.SoundCloudQuery">
+            <summary>
+            Allows for searching of tracks, playlists, etc.
+            </summary>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetAllQuery(System.String)">
+            <summary>
+            Gets a Tuple, containing queries for tracks, users, and playlists.
+            Please note that this process can take considerably long.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetTrackQuery(System.String)">
+            <summary>
+            Gets a list of tracks based on the specified query.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetUserQuery(System.String)">
+            <summary>
+            Gets a list of users based on the specified query.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetPlaylistQuery(System.String)">
+            <summary>
+            Gets a list of playlists based on the specified query.
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetClientID">
+            <summary>
+            Get the client id.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SoundPull.SoundCloud.SoundCloudPlaylist">
+            <summary>
+            Holds the information of a playlist on SoundCloud.
+            </summary>
+        </member>
+        <member name="T:SoundPull.SoundCloud.SoundCloudTrack">
+            <summary>
+            Holds the information of a track from SoundCloud.
+            </summary>
+        </member>
+        <member name="T:SoundPull.SoundCloud.SoundCloudUser">
+            <summary>
+            Holds the information of a user on SoundCloud.
+            </summary>
+        </member>
+        <member name="T:SoundPull.SoundPullSession">
+            <summary>
+            Used to pull tracks, playlists, comments, and more from SoundCloud.
+            </summary>
+        </member>
+        <member name="M:SoundPull.SoundPullSession.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="clientID"></param>
+        </member>
+        <member name="M:SoundPull.SoundPullSession.GetTrack(System.String,System.String)">
+            <summary>
+            Gets a SoundCloud track.
+            </summary>
+            <param name="userPermalink"></param>
+            <param name="trackPermalink"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundPullSession.GetUser(System.String)">
+            <summary>
+            Gets a SoundCloud user.
+            </summary>
+            <param name="userPermalink"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundPullSession.GetPlaylist(System.String,System.String)">
+            <summary>
+            Gets a SoundCloud playlist.
+            Please note that this may have problems with very large playlists (usually >100)
+            </summary>
+            <param name="userPermalink"></param>
+            <param name="playlistPermalink"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundPullSession.GetClientID">
+            <summary>
+            Get the client id.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
