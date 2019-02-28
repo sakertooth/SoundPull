@@ -19,7 +19,11 @@ namespace SoundPull.Tools
         private string clientID;
         private const string apiURL = "https://api.soundcloud.com/";
 
-        private SoundCloudQuery(string clientID)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="clientID"></param>
+        public SoundCloudQuery(string clientID)
         {
             this.clientID = clientID;
         }
