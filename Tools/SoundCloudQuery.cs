@@ -16,7 +16,7 @@ namespace SoundPull.Tools
     public class SoundCloudQuery
     {
         private readonly HttpClient jsonClient = new HttpClient();
-        private string clientID;
+        private readonly string clientID;
         private const string apiURL = "https://api.soundcloud.com/";
 
         /// <summary>

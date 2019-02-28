@@ -12,7 +12,7 @@ namespace SoundPull.Tools
     public class SoundCloudPlayer
     {
         private readonly WaveOutEvent player = new WaveOutEvent();
-        private string clientID { get; }
+        private readonly string clientID;
 
         private SoundCloudTrack track;
         private SoundCloudPlaylist playlist;

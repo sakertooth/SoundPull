@@ -112,6 +112,12 @@
             Allows for searching of tracks, playlists, etc.
             </summary>
         </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="clientID"></param>
+        </member>
         <member name="M:SoundPull.Tools.SoundCloudQuery.GetAllQuery(System.String)">
             <summary>
             Gets a Tuple, containing queries for tracks, users, and playlists.
