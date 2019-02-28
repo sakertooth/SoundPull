@@ -37,7 +37,6 @@ namespace SoundPull.SoundCloud
         public int? public_favorites_count { get; set; }
         public int? followers_count { get; set; }
         public int? followings_count { get; set; }
-        public List<List<string>> subscriptions { get; set; }
         public int? likes_count { get; set; }
         public int? reposts_count { get; set; }
         public int? comments_count { get; set; }

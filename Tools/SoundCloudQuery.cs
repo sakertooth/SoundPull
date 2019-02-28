@@ -67,9 +67,8 @@ namespace SoundPull.Tools
         /// <returns></returns>
         public List<SoundCloudUser> GetUserQuery(string query)
         {
-            string trackQueryURL = (apiURL + "users.json?q=" + query + "&client_id=" + clientID).Replace(" ", "%20");
-
-            using (Stream s = jsonClient.GetStreamAsync(trackQueryURL).Result)
+            string userQueryURL = (apiURL + "users.json?q=" + query + "&client_id=" + clientID).Replace(" ", "%20");
+            using (Stream s = jsonClient.GetStreamAsync(userQueryURL).Result)
             using (StreamReader sr = new StreamReader(s))
             using (JsonReader reader = new JsonTextReader(sr))
             {
@@ -85,9 +84,9 @@ namespace SoundPull.Tools
         /// <returns></returns>
         public List<SoundCloudPlaylist> GetPlaylistQuery(string query)
         {
-            string trackQueryURL = (apiURL + "playlists.json?q=" + query + "&client_id=" + clientID).Replace(" ", "%20");
+            string playlistQueryURL = (apiURL + "playlists.json?q=" + query + "&client_id=" + clientID).Replace(" ", "%20");
 
-            using (Stream s = jsonClient.GetStreamAsync(trackQueryURL).Result)
+            using (Stream s = jsonClient.GetStreamAsync(playlistQueryURL).Result)
             using (StreamReader sr = new StreamReader(s))
             using (JsonReader reader = new JsonTextReader(sr))
             {
