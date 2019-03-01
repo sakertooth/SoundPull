@@ -37,6 +37,24 @@ SoundCloudUser user = session.GetUser("user");
 string userDisplayName = user.username; //gets the users display name
 ```
 
+## Features
+
+* Uses 'sessions' that can pull users, tracks, and playlists, seamlessly
+* A functional Player class that can be used to play tracks and playlists with simple methods
+* No Client Secret required, only a Client ID is needed
+* Uses Json.NET, one of the fastest JSON serializers known.
+* Utilizing NAudio, proving a seamless player class to be used at your convenience.
+* Simple volume function
+* Can get the current position of your song in the format m:ss, it also allows support for your own format.
+* Loop functions, allowing you to loop songs and playlists.
+* Can search for tracks, playlists, and users.
+* Can do 'all-in-one' searches
+
+## Roadmap
+
+* To add support for Subresources
+* Generating streams, based on what accounts the user follows (https://soundcloud.com/stream)
+
 ## Snippets
 ![tracksnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/tracksnippet.PNG)
 \
