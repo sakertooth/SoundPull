@@ -55,7 +55,6 @@ string userDisplayName = user.username; //gets the users display name
 * To add support for Subresources 
 \
 ![subresourcesnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/subresourceroadmap.PNG)
-\
 
 * Generating streams, based on what accounts the user follows (https://soundcloud.com/stream)
 
