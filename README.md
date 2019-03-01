@@ -46,14 +46,16 @@ string userDisplayName = user.username; //gets the users display name
 * Utilizing NAudio, providing a seamless player class to be used at your convenience.
 * Simple volume function
 * Can get the current position of your song in the format m:ss, it also allows support for your own format.
-* Loop functions, allowing you to loop songs and playlists.
+* Loop functions, allowing you to loop songs and playlists. (available in the pre release >= 1.32)
 * Can search for tracks, playlists, and users.
 * Can do 'all-in-one' searches
 
 ## Roadmap
 
 * To add support for Subresources 
+\
 ![subresourcesnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/subresourceroadmap.PNG)
+\
 
 * Generating streams, based on what accounts the user follows (https://soundcloud.com/stream)
 
