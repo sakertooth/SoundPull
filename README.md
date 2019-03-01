@@ -41,6 +41,20 @@ SoundPullSession session = new SoundPullSession("[your_client_id]");
 SoundCloudUser user = session.GetUser("user");
 string userDisplayName = user.username; //gets the users display name
 ```
+## Snippets
+![tracksnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/tracksnippet.PNG)
+\
+\
+\
+![usersnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/usersnippet.PNG)
+\
+\
+\
+![playlistsnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/playlistsnippet.PNG)
+\
+\
+\
+![querysnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/querysnippet.PNG)
 
 ## Features
 
@@ -62,21 +76,6 @@ string userDisplayName = user.username; //gets the users display name
 ![subresourcesnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/subresourceroadmap.PNG)
 
 * Generating streams, based on what accounts the user follows (https://soundcloud.com/stream)
-
-## Snippets
-![tracksnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/tracksnippet.PNG)
-\
-\
-\
-![usersnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/usersnippet.PNG)
-\
-\
-\
-![playlistsnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/playlistsnippet.PNG)
-\
-\
-\
-![querysnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/querysnippet.PNG)
 
 ## What now?
 * [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki/1.-Getting-Started)
