@@ -1,5 +1,8 @@
 # SoundPull
+
+<p align="center">
 <img src="logo.png" align="center" />
+</p>
 
 [![build](https://img.shields.io/appveyor/ci/sakertooth/soundpull.svg)](https://ci.appveyor.com/project/sakertooth/soundpull)
 [![issues](https://img.shields.io/github/issues/sakertooth/soundpull.svg)](https://github.com/sakertooth/SoundPull/issues)
