@@ -39,6 +39,7 @@ string userDisplayName = user.username; //gets the users display name
 
 ## Snippets
 ![tracksnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/tracksnippet.PNG)
+![usersnippet](https://github.com/sakertooth/SoundPull/blob/master/snippets/SoundPull/usersnippet.PNG)
 
 ## What now?
 * [Wiki documentation](https://github.com/sakertooth/SoundPull/wiki/1.-Getting-Started)
