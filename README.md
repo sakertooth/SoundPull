@@ -17,11 +17,16 @@
 
 ## Installation
 
-Installing SoundPull and Json.Net is very simple.
+* Installing SoundPull and Json.Net is very simple.
 
 ```
 Install-Package Saker.SoundPull
 Install-Package Newtonsoft.Json
+```
+* To use the Player class, you must have NAudio as well.
+
+```
+Install-Package NAudio
 ```
 
 ## Basic Usage
