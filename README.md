@@ -43,7 +43,7 @@ string userDisplayName = user.username; //gets the users display name
 * A functional Player class that can be used to play tracks and playlists with simple methods
 * No Client Secret required, only a Client ID is needed
 * Uses Json.NET, one of the fastest JSON serializers known.
-* Utilizing NAudio, proving a seamless player class to be used at your convenience.
+* Utilizing NAudio, providng a seamless player class to be used at your convenience.
 * Simple volume function
 * Can get the current position of your song in the format m:ss, it also allows support for your own format.
 * Loop functions, allowing you to loop songs and playlists.
