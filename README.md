@@ -7,7 +7,7 @@
 \
 [![Saker.SoundPull](https://img.shields.io/nuget/v/Saker.SoundPull.svg)](https://www.nuget.org/packages/Saker.SoundPull/)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2116a4e0e7544663bb8c397fa2505d37)](https://www.codacy.com/app/sakertooth/SoundPull?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sakertooth/SoundPull&amp;utm_campaign=Badge_Grade)
-[![last_commit](https://img.shields.io/github/last-commit/sakertooth/SoundPull.svg)]
+[![last_commit](https://img.shields.io/github/last-commit/sakertooth/SoundPull.svg)](https://github.com/sakertooth/SoundPull)
 
 ![](https://github.com/sakertooth/SoundPull/blob/master/previews/pulltrackgif.gif)
 
