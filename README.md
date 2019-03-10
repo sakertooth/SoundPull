@@ -72,8 +72,6 @@ string userDisplayName = user.username; //gets the users display name
 * Can do 'all-in-one' searches
 
 ## Roadmap
-
-* To add support for Subresources 
 * Generating streams, based on what accounts the user follows (https://soundcloud.com/stream)
 
 ## What now?
