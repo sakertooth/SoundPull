@@ -19,6 +19,14 @@ namespace SoundPull.Tools
 
         private int playlistTrackPosition;
 
+        public enum Loop
+        {
+            Track,
+            Playlist,
+            None
+        }
+        public Loop loopType = Loop.None;
+
         /// <summary>
         /// 
         /// </summary>
@@ -29,6 +37,7 @@ namespace SoundPull.Tools
             this.clientID = clientID;
             this.track = track;
             Init(track.stream_url + "?client_id=" + clientID);
+            player.PlaybackStopped += Playback_Stopped;
         }
 
         /// <summary>
@@ -42,6 +51,7 @@ namespace SoundPull.Tools
             this.playlist = playlist;
             track = playlist.tracks[0];
             Init(track.stream_url + "?client_id=" + clientID);
+            player.PlaybackStopped += Playback_Stopped;
         }
 
         /// <summary>
@@ -95,6 +105,15 @@ namespace SoundPull.Tools
                 track = playlist.tracks[trackIndex];
                 Init(track.stream_url + "?client_id=" + clientID);
             }
+        }
+
+        /// <summary>
+        /// Set the loop type.
+        /// </summary>
+        /// <param name="loop"></param>
+        public void SetLoop(Loop loop)
+        {
+            loopType = loop;
         }
 
         /// <summary>
@@ -227,10 +246,20 @@ namespace SoundPull.Tools
         /// <returns></returns>
         public string GetCurrentPosition()
         {
-            double currentMs = player.GetPosition() * 1000.0 / player.OutputWaveFormat.BitsPerSample / player.OutputWaveFormat.Channels * 8 / player.OutputWaveFormat.SampleRate;
-            int currentSeconds = Convert.ToInt32(currentMs / 1000);
-            TimeSpan timeSpan = TimeSpan.FromSeconds(currentSeconds);
-            return timeSpan.ToString(@"m\:ss");         
+
+            if (GetState() == PlaybackState.Stopped)
+            {
+                return "0:00";
+            }
+            else
+            {
+
+                double currentMs = player.GetPosition() * 1000.0 / player.OutputWaveFormat.BitsPerSample / player.OutputWaveFormat.Channels * 8 / player.OutputWaveFormat.SampleRate;
+                int currentSeconds = Convert.ToInt32(currentMs / 1000);
+                TimeSpan timeSpan = TimeSpan.FromSeconds(currentSeconds);
+
+                return timeSpan.ToString(@"m\:ss");
+            }
         }
 
         /// <summary>
@@ -244,6 +273,29 @@ namespace SoundPull.Tools
             int currentSeconds = Convert.ToInt32(currentMs / 1000);
             TimeSpan timeSpan = TimeSpan.FromSeconds(currentSeconds);
             return timeSpan.ToString(format);
+        }
+
+        /// <summary>
+        /// Gets the current loop type.
+        /// </summary>
+        /// <returns></returns>
+        public Loop GetLoop()
+        {
+            return loopType;
+        }
+
+        private void Playback_Stopped(object sender, StoppedEventArgs e)
+        {
+            if (loopType == Loop.Track)
+            {
+                player.Dispose();
+                Init(track.stream_url + "?client_id=" + clientID);
+                player.Play();
+            }
+            else if (loopType == Loop.Playlist && playlist != null)
+            {
+                Next(true);
+            }
         }
 
         private void Init(string url)

@@ -4,6 +4,146 @@
         <name>SoundPull</name>
     </assembly>
     <members>
+        <member name="T:SoundPull.Other.PlaylistQueryObject">
+            <summary>
+            The playlist query object.
+            </summary>
+        </member>
+        <member name="T:SoundPull.Other.UserQueryObject">
+            <summary>
+            The user query object.
+            </summary>
+        </member>
+        <member name="T:SoundPull.Other.TrackQueryObject">
+            <summary>
+            The track query object.
+            </summary>
+        </member>
+        <member name="T:SoundPull.SoundCloud.Subresources.SoundCloudComment">
+            <summary>
+            Holds the information of a comment on SoundCloud
+            </summary>
+        </member>
+        <member name="M:SoundPull.SoundCloud.Subresources.SoundCloudComment.IsAReply">
+            <summary>
+            Detects if this comment is a reply to another comment.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SoundPull.SoundCloud.SoundCloudPlaylist">
+            <summary>
+            Holds the information of a playlist on SoundCloud.
+            </summary>
+        </member>
+        <member name="T:SoundPull.SoundCloud.SoundCloudTrack">
+            <summary>
+            Holds the information of a track from SoundCloud.
+            </summary>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudTrack.GetCommentResource(System.String)">
+            <summary>
+            Gets the comment for this track.
+            </summary>
+            <param name="clientID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudTrack.GetFavoritersResource(System.String)">
+            <summary>
+            Gets the users who have favorited this track.
+            </summary>
+            <param name="clientID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SoundPull.SoundCloud.SoundCloudUser">
+            <summary>
+            Holds the information of a user on SoundCloud.
+            </summary>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudUser.GetTracksResource(System.String)">
+            <summary>
+            Gets a list of tracks of the user.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudUser.GetFavoritesResource(System.String)">
+            <summary>
+            Gets a list of tracks favorited by the user.
+            </summary>
+            <param name="clientID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudUser.GetPlaylistResource(System.String)">
+            <summary>
+            Gets a list of playlist (sets) of the user.
+            </summary>
+            <param name="clientID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudUser.GetFollowingsResource(System.String)">
+            <summary>
+            Gets a list of users who are followed by the user.
+            </summary>
+            <param name="clientID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudUser.GetFollowersResource(System.String)">
+            <summary>
+            Gets a list of users who are following the user.
+            </summary>
+            <param name="clientID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudUser.GetCommentResource(System.String)">
+            <summary>
+            Gets a list of comments from this user.
+            </summary>
+            <param name="clientID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.SoundCloud.SoundCloudUser.GetTrackReposts(System.String)">
+            <summary>
+            Gets the reposts of the user.
+            </summary>
+            <param name="clientID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SoundPull.Tools.SoundCloudDownloader">
+            <summary>
+            Download SoundCloud tracks and playlists.
+            </summary>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudDownloader.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="clientID"></param>
+            <param name="clientID"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudDownloader.DownloadTrack(SoundPull.SoundCloud.SoundCloudTrack,System.String,System.String)">
+            <summary>
+            Downloads a track.
+            </summary>
+            <param name="track"></param>
+            <param name="dir"></param>
+            <param name="format"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudDownloader.DownloadPlaylist(SoundPull.SoundCloud.SoundCloudPlaylist,System.String,System.String)">
+            <summary>
+            WIP - Downloads a playlist.
+            </summary>
+            <param name="playlist"></param>
+            <param name="dir"></param>
+            <param name="format"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudDownloader.DownloadResource(System.String,System.String,System.String,System.String)">
+            <summary>
+            Downloads any resource.
+            </summary>
+            <param name="resource"></param>
+            <param name="dir"></param>
+            <param name="format"></param>
+            <param name="resourceName"></param>
+        </member>
         <member name="T:SoundPull.Tools.SoundCloudPlayer">
             <summary>
             Used to play tracks and playlists pulled from SoundPull using NAudio.
@@ -42,6 +182,12 @@
             Change the track in the playlist if specified.
             </summary>
             <param name="trackIndex"></param>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.SetLoop(SoundPull.Tools.SoundCloudPlayer.Loop)">
+            <summary>
+            Set the loop type.
+            </summary>
+            <param name="loop"></param>
         </member>
         <member name="M:SoundPull.Tools.SoundCloudPlayer.Play">
             <summary>
@@ -107,6 +253,12 @@
             <param name="format"></param>
             <returns></returns>
         </member>
+        <member name="M:SoundPull.Tools.SoundCloudPlayer.GetLoop">
+            <summary>
+            Gets the current loop type.
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:SoundPull.Tools.SoundCloudQuery">
             <summary>
             Allows for searching of tracks, playlists, etc.
@@ -118,33 +270,57 @@
             </summary>
             <param name="clientID"></param>
         </member>
-        <member name="M:SoundPull.Tools.SoundCloudQuery.GetAllQuery(System.String)">
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetAllQuery(System.String,System.Int32)">
             <summary>
             Gets a Tuple, containing queries for tracks, users, and playlists.
             Please note that this process can take considerably long.
             </summary>
             <param name="query"></param>
+            <param name="limit"></param>
             <returns></returns>
         </member>
-        <member name="M:SoundPull.Tools.SoundCloudQuery.GetTrackQuery(System.String)">
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetTrackQuery(System.String,System.Int32)">
             <summary>
             Gets a list of tracks based on the specified query.
             </summary>
             <param name="query"></param>
+            <param name="limit"></param>
             <returns></returns>
         </member>
-        <member name="M:SoundPull.Tools.SoundCloudQuery.GetUserQuery(System.String)">
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetUserQuery(System.String,System.Int32)">
             <summary>
             Gets a list of users based on the specified query.
             </summary>
             <param name="query"></param>
+            <param name="limit"></param>
             <returns></returns>
         </member>
-        <member name="M:SoundPull.Tools.SoundCloudQuery.GetPlaylistQuery(System.String)">
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetPlaylistQuery(System.String,System.Int32)">
             <summary>
             Gets a list of playlists based on the specified query.
             </summary>
             <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetNextTrackInQuery(System.String)">
+            <summary>
+            Get the next page in a track query.
+            </summary>
+            <param name="link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetNextUserInQuery(System.String)">
+            <summary>
+            Get the next page in a user query.
+            </summary>
+            <param name="link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SoundPull.Tools.SoundCloudQuery.GetNextPlaylistInQuery(System.String)">
+            <summary>
+            Get the next page in a playlist query.
+            </summary>
+            <param name="link"></param>
             <returns></returns>
         </member>
         <member name="M:SoundPull.Tools.SoundCloudQuery.GetClientID">
@@ -152,21 +328,6 @@
             Get the client id.
             </summary>
             <returns></returns>
-        </member>
-        <member name="T:SoundPull.SoundCloud.SoundCloudPlaylist">
-            <summary>
-            Holds the information of a playlist on SoundCloud.
-            </summary>
-        </member>
-        <member name="T:SoundPull.SoundCloud.SoundCloudTrack">
-            <summary>
-            Holds the information of a track from SoundCloud.
-            </summary>
-        </member>
-        <member name="T:SoundPull.SoundCloud.SoundCloudUser">
-            <summary>
-            Holds the information of a user on SoundCloud.
-            </summary>
         </member>
         <member name="T:SoundPull.SoundPullSession">
             <summary>

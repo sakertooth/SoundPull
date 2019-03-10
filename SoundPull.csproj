@@ -35,6 +35,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.9.1.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.9.1\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio, Version=1.8.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NAudio.1.8.5\lib\net35\NAudio.dll</HintPath>
     </Reference>
@@ -51,6 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Other\PlaylistQueryObject.cs" />
+    <Compile Include="Other\UserQueryObject.cs" />
+    <Compile Include="Other\TrackQueryObject.cs" />
+    <Compile Include="SoundCloud\Subresources\SoundCloudComment.cs" />
+    <Compile Include="Tools\SoundCloudDownloader.cs" />
     <Compile Include="Tools\SoundCloudPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SoundCloud\SoundCloudPlaylist.cs" />
