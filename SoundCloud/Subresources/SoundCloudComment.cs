@@ -28,14 +28,7 @@ namespace SoundPull.SoundCloud.Subresources
         /// <returns></returns>
         public bool IsAReply()
         {
-            if (body.StartsWith("@"))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return body.StartsWith("@");
         }
     }
 }
